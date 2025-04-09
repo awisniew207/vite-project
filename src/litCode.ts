@@ -39,9 +39,9 @@ export const litGoogleOAuth = async () => {
     console.log("✅ Authenticated with Google");
 
     console.log("Trying to fetch PKPs with fetchPKPs...");
-    const pkps = await googleProvider.fetchPKPs(authMethod);
+    const fetchedPKPs = await googleProvider.fetchPKPs(authMethod);
     console.log("✅ Fetched PKPs");
-    console.log(pkps);
+    console.log(fetchedPKPs);
 
     /*
     If you need to mint a PKP:
